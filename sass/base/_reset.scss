@@ -34,4 +34,21 @@ button {
     border: none;
     outline: none;
     display: inline-block;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: flex;
+}
+
+.site-logo {
+    display: flex;
+    img {
+        width: 117px;
+        height: 36px;
+    }
 }

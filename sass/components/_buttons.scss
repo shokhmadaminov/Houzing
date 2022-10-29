@@ -1,0 +1,15 @@
+.header__btn {
+    @include responseve(small-table) {
+        display: none;
+    }
+    padding: 1.2rem 4rem;
+    border-radius: 2px;
+    border: 1px solid $white-color;
+    @include small-text(400);
+    color: $white-color;
+    display: inline-block;
+    &:hover {
+        background-color: $white-bg-color;
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,30 @@
+// INDEX HEADER STYLES
+.header-and-nav-wrapper {
+    width: 100%;
+    position: fixed;
+}
+.header {
+    padding: 1rem 0;
+    background-color: $secondary-bg-color;
+    position: relative;
+    z-index: 3;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.burger-btn {
+    display: none;
+    @include responseve(small-table) {
+        display: block;
+    }
+}
+
+.login-btn {
+    display: none;
+    @include responseve(small-table) {
+        display: block;
+    }
+}

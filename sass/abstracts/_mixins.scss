@@ -3,3 +3,24 @@
     line-height: 1.42;
     font-weight: $weight;
 }
+
+
+@mixin responseve($breackpoint) {
+    @if $breackpoint == desktop {
+        @media only screen and (max-width: 1200px) { @content }
+    };
+    @if $breackpoint == table {
+        @media only screen and (max-width: 992px) { @content }
+    };
+    @if $breackpoint == small-table {
+        @media only screen and (max-width: 768px) { @content }
+    };
+    @if $breackpoint == phone {
+        @media only screen and (max-width: 576px) { @content }
+    };
+    @if $breackpoint == small-phone {
+        @media only screen and (max-width: 380px) { @content }
+    };
+}
+
+

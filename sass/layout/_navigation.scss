@@ -1,0 +1,56 @@
+.header__nav {
+    @include responseve(small-table) {
+        display: none;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    li:not(:last-child) {
+        margin-right: 6.4rem;    
+    }
+    a {
+        color: $white-color;
+        position: relative;
+        &::after {
+            content: "";
+            width: 0%;
+            height: 1px;
+            background-color: $white-bg-color;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            transition: width 0.2s linear;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+// LEFT NAVBAR STYLES
+.left-nav {
+    width: 100%;
+    background-color: $secondary-bg-color;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    padding-left: 1.6rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.6rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s linear;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    a {
+        color: $white-color;
+    }
+}
+.show-nav {
+    transform: translateY(0%);
+}
