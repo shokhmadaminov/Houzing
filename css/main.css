@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1212px;
+  margin: 0px auto;
+  padding: 0px 1.6rem;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+
+body {
+  font-family: "Monstserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #696969;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input {
+  font-size: 1.4rem;
+  line-height: 1.42;
+  font-weight: 400;
+  color: #0d263b;
+}
+input::placeholder {
+  color: #696969;
+}
+
+button {
+  font-family: inherit;
+}/*# sourceMappingURL=main.css.map */

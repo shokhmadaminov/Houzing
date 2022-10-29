@@ -1,0 +1,5 @@
+@mixin small-text($weight) {
+    font-size: 1.4rem;
+    line-height: 1.42;
+    font-weight: $weight;
+}

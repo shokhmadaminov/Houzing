@@ -1,0 +1,35 @@
+body {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $text-color;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1.28;
+    letter-spacing: 0.02em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    @include small-text(400);
+    color: $secondary-color;
+    &::placeholder {
+        color: $text-color;
+    }
+}   
+
+button {
+    font-family: inherit;
+}
